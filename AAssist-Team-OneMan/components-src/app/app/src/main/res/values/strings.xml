@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AAssist</string>
+    <string name="RegisterBank">Congratulations, your %3$s account has been successfully validated by the bank. You can now use this Internet Banking account.</string>
+    <string name="FetchLinkedAccoounts">These are the accounts linked with your Bank\'s internet banking ssubscription \n</string>
+    <string name="QuickSendContacts">These are the Quick Send Contacts you have.</string>
+    <string name="QuickSendContactAdd">Quick send contact was successfully added.You can now ask me to show all the Quick Send Contacts you have.</string>
+    <string name="BalanceEnquiry">You have %2$s rupees in your account. Use it wisely.</string>
+    <string name="FundTransfer">The transaction was successfull. You have %2$s rupees in your account %4$s. Cheers</string>
+    <string name="SetDefaultAccount">This accoount %2$s has been updated as the default account for sending and receiving money automatically.</string>
+    <string name="TransactionHistory">You have made %2$s transactions in this duration of a total amount of INR %5$s consisting of %3$s intra bank and %4$s inter bank transactions. An average expenditure of INR %6$s. Use your money wisely.</string>
+    <string name="UPI">UPI Transaction of %1$s rupees to %2$s was successful.</string>
+    <string name="PullTransfer">You successfully made a pull request to %2$s</string>
+    <string name="FetchDefaultAcc">You default account number is %2$s and IFSC code is %3$s</string>
+    <string name="title_activity_app_settings">AppSettings</string>
+    <string name="addrinput">eg. 192.168.225.38</string>
+    <string name="active">intel.oneman</string>
+    <string name="authourity">intel.oneman.aassist</string>
+</resources>

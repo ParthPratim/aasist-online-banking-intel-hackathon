@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:background="#262626"
+        android:layout_marginBottom="160dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/chat_area"
+        android:layout_width="match_parent"
+        android:paddingTop="30dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AAssist">
+
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/inputarea"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#212121"
+            >
+            <RelativeLayout
+                android:id="@+id/voiceinputmode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/userInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColorHint="#e1bee7"
+                    android:hint="What can i do for you"
+                    />
+                <ImageView
+                    android:id="@+id/voiceInput"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/speak"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/textinputmode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/inputdetails"
+                    android:layout_width="match_parent"
+                    android:text="Please enter the Username"
+                    android:textColor="#4885ed"
+                    android:textSize="17dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edittextu"
+                    android:layout_width="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:backgroundTint="#4885ed"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/edittextsend"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/send"
+                    android:layout_toRightOf="@id/edittextu"
+                    android:layout_alignBottom="@id/edittextu" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+mysql:
+    host: localhost
+    user: root
+    passwd:
+    db: aassist
+
+banks:
+    sbi:
+        code : 'SBIN'
+        name : 'State Bank Of India'
+        index : '/banks/sbi/'
+        uid : 2018001
+    axis:
+        code : 'UTIB'
+        name : 'Axis Bank'
+        index : '/banks/axis'
+        uid : 2018002
+

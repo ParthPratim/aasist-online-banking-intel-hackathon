@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "220727993251",
+    "firebase_url": "https://inteaassist.firebaseio.com",
+    "project_id": "inteaassist",
+    "storage_bucket": "inteaassist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220727993251:android:eb2d45d2ca8d8b31",
+        "android_client_info": {
+          "package_name": "intel.oneman.aassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220727993251-6p4pq18krnkhaf5vgbofhnf9pmn1a25d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxxn4ur1sLPW0tP3Ad36CxfVuqYZC3j-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+
+        <ImageView
+            android:id="@+id/Menu"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/AAssistLogo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/aassist_main"></ImageView>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        tools:context=".AAssist">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="88dp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        tools:context="com.createedittextwithcross_android_examples.com.MainActivity" >
+
+        <RelativeLayout
+            android:id="@+id/release_mic"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="35dp"
+            android:visibility="gone"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:id="@+id/notif_release"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@layout/notifboxtext"
+                android:text="Release when done"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:rotation="180"
+                android:layout_marginRight="5dp"
+                android:background="@layout/notifbox" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/inputarea"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:background="@layout/textinput">
+
+            <ImageView
+                android:id="@+id/sendMessage"
+                android:layout_width="25dp"
+                android:layout_marginRight="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#fff"
+                android:src="@drawable/send" />
+            <ImageView
+                android:id="@+id/voiceInput"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#fff"
+                android:src="@drawable/google_mic" />
+            <EditText
+                android:id="@+id/userInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="60dp"
+                android:background="@null"
+                android:textColor="@color/primaryTextColor"
+                android:ems="10"
+                android:hint="How can i help you ?">
+
+            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

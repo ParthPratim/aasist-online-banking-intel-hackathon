@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:layout_height="wrap_content">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/msgparent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+    <ImageView
+        android:id="@+id/aassisticon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginRight="6dip"
+        android:padding="5dp"
+        android:contentDescription="TOFO"
+        android:adjustViewBounds="true"
+        android:background="@layout/sender"
+        android:src="@drawable/intel" />
+
+    <TextView
+        android:id="@+id/chat_message"
+        android:layout_width="wrap_content"
+        android:maxWidth="300dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:text="Hello"
+        android:textColor="#000"
+        android:background="@layout/sender_msg"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip"
+        android:paddingRight="12dip"
+        android:paddingLeft="12dip"
+        android:textSize="14sp" />
+
+</LinearLayout>
+</RelativeLayout>
